@@ -24,7 +24,6 @@ class AuthController extends Controller
         if (Auth::attempt($data)) {
             $user = Auth::user();
 
-
             $token = $user->createToken('Laravel-9-Passport-Auth')->accessToken;
 
 
